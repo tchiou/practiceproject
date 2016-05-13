@@ -1,4 +1,4 @@
-package pracproject.proj;
+package pracproject2.proj2;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

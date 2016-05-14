@@ -5,7 +5,7 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
- * Unit test for simple App.
+ * Unit test for simple Reminders class.
  */
 public class AppTest 
     extends TestCase
@@ -33,6 +33,11 @@ public class AppTest
      */
     public void testApp()
     {
-        assertTrue( true );
+    	Reminders newRemind = new Reminders();
+    	assertTrue(newRemind.numberOfReminders() == 0);
+    	
+    	newRemind.addReminder("Feed the pet");
+    	assertTrue(newRemind.numberOfReminders()==1);
+
     }
 }
